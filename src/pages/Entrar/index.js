@@ -52,7 +52,7 @@ const Entrar = () => {
         <C.LabelSignup>
           ainda não tem uma conta?
           <C.Strong>
-            <Link to="/cadastrar">&nbsp;cadastre-se</Link>
+            <Link to="/cadastrar">&nbsp;cadastrar</Link>
           </C.Strong>
         </C.LabelSignup>
       </C.Content>

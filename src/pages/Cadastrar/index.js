@@ -17,10 +17,10 @@ const Cadastrar = () => {
 
   const handleCadastrar = () => {
     if (!email | !emailConf | !senha) {
-      setError("Preencha todos os campos");
+      setError("preencha todos os campos");
       return;
     } else if (email !== emailConf) {
-      setError("Os e-mails não são iguais");
+      setError("os e-mails não são iguais");
       return;
     }
 
@@ -31,7 +31,7 @@ const Cadastrar = () => {
       return;
     }
 
-    alert("Usuário cadatrado com sucesso!");
+    alert("usuário cadastrado com sucesso!");
     navigate("/");
   };
 
@@ -42,28 +42,28 @@ const Cadastrar = () => {
       <C.Content>
         <Input
           type="email"
-          placeholder="Digite seu E-mail"
+          placeholder="digite seu e-mail"
           value={email}
           onChange={(e) => [setEmail(e.target.value), setError("")]}
         />
         <Input
           type="email"
-          placeholder="Confirme seu E-mail"
+          placeholder="confirme seu e-mail"
           value={emailConf}
           onChange={(e) => [setEmailConf(e.target.value), setError("")]}
         />
         <Input
           type="password"
-          placeholder="Digite sua Senha"
+          placeholder="digite sua Senha"
           value={senha}
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
         <C.labelError>{error}</C.labelError>
-        <Button Text="Inscrever-se" onClick={handleCadastrar} />
+        <Button Text="cadastrar" onClick={handleCadastrar} />
         <C.LabelSignin>
-          Já tem uma conta?
+          já tem uma conta?
           <C.Strong>
-            <Link to="/">&nbsp;Entre</Link>
+            <Link to="/">&nbsp;entre</Link>
           </C.Strong>
         </C.LabelSignin>
       </C.Content>
